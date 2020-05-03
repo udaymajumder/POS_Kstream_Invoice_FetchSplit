@@ -1,0 +1,427 @@
+{
+  "type": "object",
+  "title": "The Invoice Schema",
+  "javaType" : "org.test.srcJsonSchema.Invoice",
+  "description": "The root schema comprises the entire Invoice JSON document.",
+  "default": {},
+  "additionalProperties": true,
+  "required": [
+    "Invoice_Number",
+    "Merchant_Detail",
+    "Billing_Detail",
+    "Consumer_Detail",
+    "Location_Detail"
+  ],
+  "properties": {
+    "Invoice_Number": {
+      "$id": "#/properties/Invoice_Number",
+      "type": "integer",
+      "title": "The Invoice_number Schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": 0,
+      "examples": [
+        84134400.0
+      ]
+    },
+    "Merchant_Detail": {
+      "$id": "#/properties/Merchant_Detail",
+      "type": "object",
+      "title": "The Merchant_detail Schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "MRCH_CAT_CD": 2.0,
+          "MRCH_CD": 320.0,
+          "MRCH_NM": "McLaughlin, Jerde and Beahan"
+        }
+      ],
+      "additionalProperties": true,
+      "required": [
+        "MRCH_CD",
+        "MRCH_NM",
+        "MRCH_CAT_CD"
+      ],
+      "properties": {
+        "MRCH_CD": {
+          "$id": "#/properties/Merchant_Detail/properties/MRCH_CD",
+          "type": "integer",
+          "title": "The Mrch_cd Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [
+            320.0
+          ]
+        },
+        "MRCH_NM": {
+          "$id": "#/properties/Merchant_Detail/properties/MRCH_NM",
+          "type": "string",
+          "title": "The Mrch_nm Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "McLaughlin, Jerde and Beahan"
+          ]
+        },
+        "MRCH_CAT_CD": {
+          "$id": "#/properties/Merchant_Detail/properties/MRCH_CAT_CD",
+          "type": "integer",
+          "title": "The Mrch_cat_cd Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [
+            2.0
+          ]
+        }
+      }
+    },
+    "Billing_Detail": {
+      "$id": "#/properties/Billing_Detail",
+      "type": "object",
+      "title": "The Billing_detail Schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "BILL_AMT": 13896.57,
+          "PRD_LIST": [
+            {
+              "QTY": 3.0,
+              "PRD_PURCHASE_DTL": {
+                "PRD_CAT_CD": 6.0,
+                "PRICE": "$4632.19",
+                "PRD_CD": 21.0,
+                "PRD_NM": "Bread - White, Unsliced"
+              }
+            }
+          ]
+        }
+      ],
+      "additionalProperties": true,
+      "required": [
+        "PRD_LIST",
+        "BILL_AMT"
+      ],
+      "properties": {
+        "PRD_LIST": {
+          "$id": "#/properties/Billing_Detail/properties/PRD_LIST",
+          "type": "array",
+          "title": "The Prd_list Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": [],
+          "examples": [
+            [
+              {
+                "QTY": 3.0,
+                "PRD_PURCHASE_DTL": {
+                  "PRD_CAT_CD": 6.0,
+                  "PRICE": "$4632.19",
+                  "PRD_CD": 21.0,
+                  "PRD_NM": "Bread - White, Unsliced"
+                }
+              }
+            ]
+          ],
+          "additionalItems": true,
+          "items": {
+            "$id": "#/properties/Billing_Detail/properties/PRD_LIST/items",
+            "type": "object",
+            "title": "The Items Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+              {
+                "PRD_PURCHASE_DTL": {
+                  "PRICE": "$4632.19",
+                  "PRD_CD": 21.0,
+                  "PRD_NM": "Bread - White, Unsliced",
+                  "PRD_CAT_CD": 6.0
+                },
+                "QTY": 3.0
+              }
+            ],
+            "additionalProperties": true,
+            "required": [
+              "PRD_PURCHASE_DTL",
+              "QTY"
+            ],
+            "properties": {
+              "PRD_PURCHASE_DTL": {
+                "$id": "#/properties/Billing_Detail/properties/PRD_LIST/items/properties/PRD_PURCHASE_DTL",
+                "type": "object",
+                "title": "The Prd_purchase_dtl Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": {},
+                "examples": [
+                  {
+                    "PRD_CD": 21.0,
+                    "PRD_NM": "Bread - White, Unsliced",
+                    "PRD_CAT_CD": 6.0,
+                    "PRICE": "$4632.19"
+                  }
+                ],
+                "additionalProperties": true,
+                "required": [
+                  "PRD_CD",
+                  "PRD_NM",
+                  "PRD_CAT_CD",
+                  "PRICE"
+                ],
+                "properties": {
+                  "PRD_CD": {
+                    "$id": "#/properties/Billing_Detail/properties/PRD_LIST/items/properties/PRD_PURCHASE_DTL/properties/PRD_CD",
+                    "type": "integer",
+                    "title": "The Prd_cd Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                      21.0
+                    ]
+                  },
+                  "PRD_NM": {
+                    "$id": "#/properties/Billing_Detail/properties/PRD_LIST/items/properties/PRD_PURCHASE_DTL/properties/PRD_NM",
+                    "type": "string",
+                    "title": "The Prd_nm Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      "Bread - White, Unsliced"
+                    ]
+                  },
+                  "PRD_CAT_CD": {
+                    "$id": "#/properties/Billing_Detail/properties/PRD_LIST/items/properties/PRD_PURCHASE_DTL/properties/PRD_CAT_CD",
+                    "type": "integer",
+                    "title": "The Prd_cat_cd Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                      6.0
+                    ]
+                  },
+                  "PRICE": {
+                    "$id": "#/properties/Billing_Detail/properties/PRD_LIST/items/properties/PRD_PURCHASE_DTL/properties/PRICE",
+                    "type": "string",
+                    "title": "The Price Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      "$4632.19"
+                    ]
+                  }
+                }
+              },
+              "QTY": {
+                "$id": "#/properties/Billing_Detail/properties/PRD_LIST/items/properties/QTY",
+                "type": "integer",
+                "title": "The Qty Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": 0,
+                "examples": [
+                  3.0
+                ]
+              }
+            }
+          }
+        },
+        "BILL_AMT": {
+          "$id": "#/properties/Billing_Detail/properties/BILL_AMT",
+          "type": "number",
+          "title": "The Bill_amt Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [
+            13896.57
+          ]
+        }
+      }
+    },
+    "Consumer_Detail": {
+      "$id": "#/properties/Consumer_Detail",
+      "type": "object",
+      "title": "The Consumer_detail Schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "PRM_IND": false,
+          "NAME": "Gerome Nieass",
+          "STATE": "California",
+          "ADDR_LINE": "0 Bultman Parkway",
+          "PHONE": "941-217-5559",
+          "PIN": 312361.0,
+          "CON_ID": 264.0,
+          "GENDER": "M"
+        }
+      ],
+      "additionalProperties": true,
+      "required": [
+        "NAME",
+        "GENDER",
+        "ADDR_LINE",
+        "PHONE",
+        "CON_ID",
+        "PRM_IND",
+        "STATE",
+        "PIN"
+      ],
+      "properties": {
+        "NAME": {
+          "$id": "#/properties/Consumer_Detail/properties/NAME",
+          "type": "string",
+          "title": "The Name Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "Gerome Nieass"
+          ]
+        },
+        "GENDER": {
+          "$id": "#/properties/Consumer_Detail/properties/GENDER",
+          "type": "string",
+          "title": "The Gender Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "M"
+          ]
+        },
+        "ADDR_LINE": {
+          "$id": "#/properties/Consumer_Detail/properties/ADDR_LINE",
+          "type": "string",
+          "title": "The Addr_line Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "0 Bultman Parkway"
+          ]
+        },
+        "PHONE": {
+          "$id": "#/properties/Consumer_Detail/properties/PHONE",
+          "type": "string",
+          "title": "The Phone Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "941-217-5559"
+          ]
+        },
+        "CON_ID": {
+          "$id": "#/properties/Consumer_Detail/properties/CON_ID",
+          "type": "integer",
+          "title": "The Con_id Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [
+            264.0
+          ]
+        },
+        "PRM_IND": {
+          "$id": "#/properties/Consumer_Detail/properties/PRM_IND",
+          "type": "boolean",
+          "title": "The Prm_ind Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": false,
+          "examples": [
+            false
+          ]
+        },
+        "STATE": {
+          "$id": "#/properties/Consumer_Detail/properties/STATE",
+          "type": "string",
+          "title": "The State Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "California"
+          ]
+        },
+        "PIN": {
+          "$id": "#/properties/Consumer_Detail/properties/PIN",
+          "type": "integer",
+          "title": "The Pin Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [
+            312361.0
+          ]
+        }
+      }
+    },
+    "Location_Detail": {
+      "$id": "#/properties/Location_Detail",
+      "type": "object",
+      "title": "The Location_detail Schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "LOC_STATE": "Georgia",
+          "LOC_CTRY": "United States",
+          "LOC_PIN": 501683.0,
+          "LOC_ID": 482.0,
+          "LOC_NM": "Clemons"
+        }
+      ],
+      "additionalProperties": true,
+      "required": [
+        "LOC_NM",
+        "LOC_CTRY",
+        "LOC_STATE",
+        "LOC_ID",
+        "LOC_PIN"
+      ],
+      "properties": {
+        "LOC_NM": {
+          "$id": "#/properties/Location_Detail/properties/LOC_NM",
+          "type": "string",
+          "title": "The Loc_nm Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "Clemons"
+          ]
+        },
+        "LOC_CTRY": {
+          "$id": "#/properties/Location_Detail/properties/LOC_CTRY",
+          "type": "string",
+          "title": "The Loc_ctry Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "United States"
+          ]
+        },
+        "LOC_STATE": {
+          "$id": "#/properties/Location_Detail/properties/LOC_STATE",
+          "type": "string",
+          "title": "The Loc_state Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "Georgia"
+          ]
+        },
+        "LOC_ID": {
+          "$id": "#/properties/Location_Detail/properties/LOC_ID",
+          "type": "integer",
+          "title": "The Loc_id Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [
+            482.0
+          ]
+        },
+        "LOC_PIN": {
+          "$id": "#/properties/Location_Detail/properties/LOC_PIN",
+          "type": "integer",
+          "title": "The Loc_pin Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [
+            501683.0
+          ]
+        }
+      }
+    }
+  }
+}

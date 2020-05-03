@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1c3be21d-fafb-49cc-919d-79deafc9d386" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Package Object" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1b50fGkhY3a6OKSCQn9uIPLZBYY" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.scala.settings.ScalaProjectSettingsConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="POJO" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\001ud\IdeaProjects\InvoiceProcess\src\main\resources" />
+      <recent name="C:\Users\001ud\IdeaProjects\InvoiceProcess\scripts" />
+      <recent name="C:\Users\001ud\IdeaProjects\InvoiceProcess\src\main\scala\org\example\InvoiceProcess\Serde" />
+      <recent name="C:\Users\001ud\IdeaProjects\InvoiceProcess\src\main\scala\org\example\InvoiceProcess\POJO" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.InvoiceProcessing">
+    <configuration name="InvoiceProcessing" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.InvoiceProcess.InvoiceProcessing" />
+      <module name="InvoiceProcess" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.InvoiceProcess.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="billing-topic-create" type="BatchConfigurationType" factoryName="Batch" temporary="true">
+      <module name="InvoiceProcess" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\001ud\IdeaProjects\InvoiceProcess\scripts" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="billing-topic-create.cmd" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="non-prime-consumer-topic-create" type="BatchConfigurationType" factoryName="Batch" temporary="true">
+      <module name="InvoiceProcess" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\001ud\IdeaProjects\InvoiceProcess\scripts" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="non-prime-consumer-topic-create.cmd" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="prime-consumer-topic-create" type="BatchConfigurationType" factoryName="Batch" temporary="true">
+      <module name="InvoiceProcess" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\001ud\IdeaProjects\InvoiceProcess\scripts" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="prime-consumer-topic-create.cmd" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="product-topic-create" type="BatchConfigurationType" factoryName="Batch" temporary="true">
+      <module name="InvoiceProcess" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\001ud\IdeaProjects\InvoiceProcess\scripts" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="product-topic-create.cmd" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.InvoiceProcessing" />
+        <item itemvalue="Batch.billing-topic-create" />
+        <item itemvalue="Batch.product-topic-create" />
+        <item itemvalue="Batch.prime-consumer-topic-create" />
+        <item itemvalue="Batch.non-prime-consumer-topic-create" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="projectSyncType">
+      <map>
+        <entry key="$PROJECT_DIR$/../RockTheJvmSparkStreaming/udemy-spark-streaming" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1c3be21d-fafb-49cc-919d-79deafc9d386" name="Default Changelist" comment="" />
+      <created>1587906749010</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1587906749010</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="690" y="280" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1588517319100">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="690" y="280" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1588517319100" />
+    <state x="765" y="234" key="#com.intellij.ide.util.MemberChooser" timestamp="1588318804168">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="765" y="234" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1588318804168" />
+    <state x="639" y="450" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1587910136578">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="639" y="450" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1587910136578" />
+    <state x="690" y="272" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588316366422">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="690" y="272" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1588316366422" />
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1588517337734">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1588517337734" />
+    <state width="1877" height="348" key="GridCell.Tab.0.center" timestamp="1588517337734">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1588517337734" />
+    <state width="1877" height="348" key="GridCell.Tab.0.left" timestamp="1588517337734">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1588517337734" />
+    <state width="1877" height="348" key="GridCell.Tab.0.right" timestamp="1588517337734">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1588517337734" />
+    <state x="616" y="243" key="run.anything.popup" timestamp="1588509766982">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="616" y="243" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1588509766982" />
+  </component>
+</project>
